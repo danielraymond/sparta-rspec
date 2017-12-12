@@ -22,4 +22,12 @@ describe Fizzbuzz do
     expect(@fb.divisibleBy?(13,5)).to be false
   end
 
+  it "Should correctly apply fizzbuzz to a given range" do
+    @fb.fizzbuzz_iterator(1,15)
+
+    expect(@fb.fizzbuzz_array[2]).to eq('Fizz')
+    expect(@fb.fizzbuzz_array[4]).to eq('Buzz')
+    expect(@fb.fizzbuzz_array[-1]).to eq('FizzBuzz')
+  end
+
 end
