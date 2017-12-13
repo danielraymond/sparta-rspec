@@ -13,9 +13,10 @@ describe 'Finding the sum of even fibonacci numbers' do
   end
 
   it "Should return a total of all the even values" do
-    @sum.even_sum(10)
 
-    expect(@sum.total).to eq(143)
+    @sum.fibonacci_iterator(10)
+
+    expect(@sum.even_sum(10)).to eq(44)
   end
 
 end

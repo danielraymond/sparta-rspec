@@ -1,5 +1,5 @@
 class Fibonacci
-  attr_accessor :fibonacci_array, :total
+  attr_accessor :fibonacci_array
 
   def initialize
     @fibonacci_array = []
@@ -19,12 +19,18 @@ class Fibonacci
   end
 
   def even_sum(range)
-    @total = 0
-    (0..range).each do |i|
-      if @fibonacci_array[i] % 2 == 0
-        @total += @fibonacci_array[i]
+    total = 0
+    @fibonacci_array[0..range].each do |i|
+      if i % 2 == 0
+        total += i
       end
     end
+    total
   end
 
 end
+
+# check = Fibonacci.new
+#
+# check.fibonacci_iterator(10)
+# check.even_sum(10)
