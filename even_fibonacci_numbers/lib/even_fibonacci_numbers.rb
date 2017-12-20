@@ -29,8 +29,3 @@ class Fibonacci
   end
 
 end
-
-# check = Fibonacci.new
-#
-# check.fibonacci_iterator(10)
-# check.even_sum(10)
